@@ -11,6 +11,7 @@ Summary:    Common Unix Printing System Interface
 Url:        http://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.gz
 BuildRequires: perl-devel
+BuildRequires: cups-devel
 BuildRequires: perl(Test::More)
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
