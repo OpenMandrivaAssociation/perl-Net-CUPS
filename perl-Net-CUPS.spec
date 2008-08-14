@@ -1,6 +1,6 @@
 %define module   Net-CUPS
-%define version    0.56
-%define release    %mkrel 2
+%define version    0.57
+%define release    %mkrel 1
 
 Name:       perl-%{module}
 Version:    %{version}
@@ -21,6 +21,9 @@ System.
 
 %prep
 %setup -q -n %{module}-%{version} 
+# those test requires a running cups server
+# http://rt.cpan.org/Ticket/Display.html?id=38469
+rm -f t/03_destination.t
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
