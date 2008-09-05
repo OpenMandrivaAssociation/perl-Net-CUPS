@@ -1,5 +1,5 @@
 %define module   Net-CUPS
-%define version    0.58
+%define version    0.59
 %define release    %mkrel 1
 
 Name:       perl-%{module}
