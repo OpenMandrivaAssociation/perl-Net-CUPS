@@ -1,5 +1,5 @@
 %define upstream_name    Net-CUPS
-%define upstream_version 0.59
+%define upstream_version 0.60
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
