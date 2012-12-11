@@ -45,3 +45,44 @@ rm -rf %{buildroot}
 %doc README Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.610.0-2
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Thu Aug 20 2009 Jérôme Quelin <jquelin@mandriva.org> 0.610.0-1mdv2010.0
++ Revision: 418545
+- update to 0.61
+
+* Tue Aug 04 2009 Jérôme Quelin <jquelin@mandriva.org> 0.600.0-1mdv2010.0
++ Revision: 408837
+- update to 0.60
+
+* Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.590.0-1mdv2010.0
++ Revision: 404065
+- rebuild using %%perl_convert_version
+
+* Fri Sep 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.59-1mdv2009.0
++ Revision: 281111
+- update to new version 0.59
+
+* Sun Aug 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.58-1mdv2009.0
++ Revision: 277954
+- update to new version 0.58
+
+* Thu Aug 14 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.57-1mdv2009.0
++ Revision: 272041
+- new version
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild early 2009.0 package (before pixel changes)
+
+* Wed Apr 16 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.55-1mdv2009.0
++ Revision: 194693
+- import perl-Net-CUPS
+
+
+* Wed Apr 09 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.55-1mdv2008.1
+- initial mdv import
