@@ -1,15 +1,13 @@
 %define upstream_name    Net-CUPS
-%define upstream_version 0.65
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    0.65
+Release:	2
 
 Summary:    Common Unix Printing System Interface
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/niner/perl-Net-CUPS
-Source0:    https://cpan.metacpan.org/authors/id/N/NI/NINE/Net-CUPS-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/N/NI/NINE/Net-CUPS-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl-devel
@@ -22,7 +20,7 @@ Net::CUPS is an object oriented interface to the Common Unix Printing
 System.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 # those test requires a running cups server
 # http://rt.cpan.org/Ticket/Display.html?id=38469
 rm -f t/03_destination.t
@@ -63,9 +61,7 @@ rm -rf %{buildroot}
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.590.0-1mdv2010.0
 + Revision: 404065
-- rebuild using %%perl_convert_version
-
-* Fri Sep 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.59-1mdv2009.0
+- rebuild using %0.65 Fri Sep 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.59-1mdv2009.0
 + Revision: 281111
 - update to new version 0.59
 
